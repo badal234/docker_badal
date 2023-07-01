@@ -5,7 +5,7 @@ steps:
       [
         "build",
         "-t",
-        "asia-docker.pkg.dev/stunning-saga-386406/bnm",
+        "us-central1-docker.pkg.dev/stunning-saga-386406/bnm23/bnm2:latest",
         ".",
       ]
 
@@ -14,7 +14,7 @@ steps:
     args:
       [
         "push",
-        "asia-docker.pkg.dev/stunning-saga-386406/bnm",
+        "us-central1-docker.pkg.dev/stunning-saga-386406/bnm23/bnm2:latest",
       ]
 
   # Deploy the image to Cloud Run
@@ -24,9 +24,9 @@ steps:
       - "deploy"
       - "flask-server"
       - "--image"
-      - "asia-docker.pkg.dev/stunning-saga-386406/bnm"
+      - "us-central1-docker.pkg.dev/stunning-saga-386406/bnm23/bnm2:latest"
       - "--region"
-      - "asia-south1-a"
+      - "us-central1"
       - "--platform"
       - "managed"
       - "--allow-unauthenticated"
