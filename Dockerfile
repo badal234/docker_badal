@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 EXPOSE 5000
 
 # Set the command to run the Flask server
-CMD ["python", "app.py"] 
+CMD ["python", "app2.py"] 
